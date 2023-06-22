@@ -1,0 +1,29 @@
+@use "../variables";
+@use "../mixins";
+
+.site-header {
+    padding-top: 46px;
+    background-image: url("/images/sandwich.png");
+    background-repeat: no-repeat;
+    background-size: 251px 177px;
+    background-position: top center;
+
+}
+
+.site-header__wrapper {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.site-header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.site-header__link:not(:last-child) {
+    margin-right: 62px;
+}
