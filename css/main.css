@@ -1,5 +1,7 @@
 :root {
   --main-font-family: "Abhaya Libre", "Times New Roman", serif;
+  --main-font-size: 20px;
+  --main-line-height: 30px;
   --main-libre-weight: 700;
   --main-font-weight: 500;
   --main-text-color: #2e2e2e;
@@ -402,4 +404,74 @@ img {
 
 .site-header__link:not(:last-child) {
   margin-right: 62px;
+}
+
+.hero {
+  padding-top: 135px;
+  padding-bottom: 131px;
+  background-image: url("/images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: 879px 625px;
+  background-position: calc(50% + 280px) calc(50% + 0px);
+}
+
+.hero__textbox {
+  max-width: 495px;
+  width: 100%;
+}
+
+.hero__span {
+  margin-bottom: 16px;
+  font-family: var(--main-font-family);
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #ff9401;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-family: var(--main-font-family);
+  font-size: 96px;
+  line-height: 108px;
+  font-weight: 800;
+  color: #232323;
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 44px;
+  font-size: var(--main-font-size);
+  line-height: 160%;
+  font-weight: var(--main-font-weight);
+  color: var(--main-secondary-color);
+}
+
+.hero__link {
+  display: inline-block;
+  margin-bottom: 60px;
+  padding: 16px 32px;
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  font-weight: var(--main-font-weight);
+  color: #fff;
+  background-color: #ff9401;
+  border-radius: 31px;
+  text-transform: capitalize;
+  text-decoration-line: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero__link:hover {
+  background-color: var(--main-text-color);
+}
+
+.hero__apps {
+  display: flex;
+  align-items: center;
+}
+
+.hero__app-link:not(:last-child) {
+  margin-right: 30px;
 }/*# sourceMappingURL=main.css.map */
