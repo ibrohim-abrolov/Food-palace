@@ -357,6 +357,7 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
   background-color: #fffefc;
+  overflow-x: hidden;
 }
 
 img {
@@ -741,4 +742,117 @@ img {
 
 .items__main-link:hover {
   background-color: var(--main-text-color);
+}
+
+.info {
+  padding-bottom: 228px;
+}
+
+.info__list {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.info__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info__items:not(:last-child) {
+  margin-bottom: 166px;
+}
+
+.info__items:last-child {
+  flex-direction: row-reverse;
+}
+
+.info__span {
+  display: block;
+  font-family: var(--main-font-family);
+  font-size: 24px;
+  line-height: var(--main-line-height);
+  font-weight: 600;
+  color: #ff9401;
+}
+
+.info__textbox {
+  max-width: 444px;
+  width: 100%;
+}
+
+.info__textbox--initial {
+  margin-left: 118px;
+}
+
+.info__textbox--initial::after {
+  display: block;
+  content: "";
+  width: 342px;
+  height: 62px;
+  background-image: url("/images/apps.svg");
+  background-repeat: no-repeat;
+}
+
+.info__img--last {
+  transform: translateX(160px);
+}
+
+.info__title {
+  margin-top: 23px;
+  margin-bottom: 18px;
+  font-family: var(--main-font-family);
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: var(--main-libre-weight);
+  color: var(--main-text-color);
+}
+
+.info__title:last-child {
+  margin-bottom: 30px;
+}
+
+.info__text {
+  margin-top: 0;
+  margin-bottom: 45px;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 160%;
+  font-weight: var(--main-font-weight);
+  color: var(--main-secondary-color);
+}
+
+.info__mini {
+  position: relative;
+}
+
+.info__about {
+  margin: 0;
+  margin-bottom: 4px;
+  font-family: var(--main-font-family);
+  font-size: 24px;
+  line-height: var(--main-line-height);
+  font-weight: 600;
+  color: var(--main-text-color);
+}
+
+.info__about::after {
+  position: absolute;
+  top: 16px;
+  left: 350px;
+  display: block;
+  content: "";
+  width: 51px;
+  height: 31px;
+  background-image: url("/images/arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.info__link {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: var(--main-font-weight);
+  color: #675959;
+  text-decoration-line: none;
 }/*# sourceMappingURL=main.css.map */
