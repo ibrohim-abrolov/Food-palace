@@ -5,6 +5,7 @@
 }
 
 @mixin flexbox($row, $align, $justify) {
+    display: flex;
     flex-direction: $row;
     align-items: $align;
     justify-content: $justify;
