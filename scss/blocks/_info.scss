@@ -2,7 +2,12 @@
 @use "../mixins";
 
 .info {
+    position: relative;
+    z-index: 100;
     padding-bottom: 228px;
+    background-image: url("/images/info-left.png"), url("/images/info-right.png");
+    background-position: calc(50% + -531px) calc(50% + -650px), calc(50% + 480px) calc(50% + -650px);
+    background-repeat: no-repeat
 }
 
 .info__list {
