@@ -4,12 +4,19 @@
 .site-footer {
     padding-top: 84px;
     padding-bottom: 44px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 148, 1, 0.05)), to(rgba(255, 237, 211, 0.00)));
+    background-image: -o-linear-gradient(top, rgba(255, 148, 1, 0.05) 0%, rgba(255, 237, 211, 0.00) 100%);
     background-image: linear-gradient(180deg, rgba(255, 148, 1, 0.05) 0%, rgba(255, 237, 211, 0.00) 100%);
 }
 
 .site-footer__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .logo-link {
@@ -22,7 +29,8 @@
     font-weight: var(--main-font-weight);
     color: var(--main-secondary-color);
     text-transform: capitalize;
-    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
 }
 
 .site-footer__wrapper {
@@ -54,7 +62,10 @@
     line-height: var(--main-line-height);
     color: #6a5c5c;
     text-transform: capitalize;
-    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    -webkit-transition: color 0.4s ease;
+    -o-transition: color 0.4s ease;
     transition: color 0.4s ease;
 }
 
@@ -69,7 +80,8 @@
 .site-footer__link--socials {
     font-weight: var(--main-font-weight);
     color: var(--main-text-color);
-    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
 }
 
 .site-footer__main-text {
@@ -80,4 +92,3 @@
     text-align: center;
     color: #685d5d;
 }
-

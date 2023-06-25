@@ -54,7 +54,10 @@
     background-color: #ff9401;
     border-radius: 31px;
     text-transform: capitalize;
-    text-decoration-line: none;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
 }
 
@@ -63,8 +66,12 @@
 }
 
 .hero__apps {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .hero__app-link:not(:last-child) {
